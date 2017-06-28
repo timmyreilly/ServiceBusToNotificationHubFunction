@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TRACKtechNotificationFunction", "TRACKtechNotificationFunction\TRACKtechNotificationFunction.csproj", "{C4490D98-6AD3-4461-AC1D-9227C497BB3C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationHubFunction", "NotificationHubFunction\NotificationHubFunction.csproj", "{0511C7CE-A4E1-4C58-8ECE-8F032DF3CA5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationHubFunctionLibrary", "NotificationHubFunctionLibrary\NotificationHubFunctionLibrary.csproj", "{012999E1-9B5A-4AC1-89E5-8AEFDF44B225}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C4490D98-6AD3-4461-AC1D-9227C497BB3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C4490D98-6AD3-4461-AC1D-9227C497BB3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C4490D98-6AD3-4461-AC1D-9227C497BB3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C4490D98-6AD3-4461-AC1D-9227C497BB3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0511C7CE-A4E1-4C58-8ECE-8F032DF3CA5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0511C7CE-A4E1-4C58-8ECE-8F032DF3CA5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0511C7CE-A4E1-4C58-8ECE-8F032DF3CA5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0511C7CE-A4E1-4C58-8ECE-8F032DF3CA5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{012999E1-9B5A-4AC1-89E5-8AEFDF44B225}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{012999E1-9B5A-4AC1-89E5-8AEFDF44B225}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{012999E1-9B5A-4AC1-89E5-8AEFDF44B225}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{012999E1-9B5A-4AC1-89E5-8AEFDF44B225}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -9,12 +9,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{C4490D98-6AD3-4461-AC1D-9227C497BB3C}</ProjectGuid>
+    <ProjectGuid>{0511C7CE-A4E1-4C58-8ECE-8F032DF3CA5F}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TRACKtechNotificationFunction</RootNamespace>
-    <AssemblyName>TRACKtechNotificationFunction</AssemblyName>
+    <RootNamespace>NotificationHubFunction</RootNamespace>
+    <AssemblyName>NotificationHubFunction</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -67,6 +67,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <Content Include="appsettings.json" />
+    <Content Include="ServiceBusTopicTriggerCSharp\function.json" />
+    <Content Include="ServiceBusTopicTriggerCSharp\run.csx" />
+    <Content Include="ServiceBusTopicTriggerCSharp\sample.dat" />
+    <Content Include="host.json" />
+    <None Include="Properties\PublishProfiles\NotificationHubFunction20170628024534 - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -75,10 +81,17 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".gitignore" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NotificationHubFunctionLibrary\NotificationHubFunctionLibrary.csproj">
+      <Project>{012999e1-9b5a-4ac1-89e5-8aefdf44b225}</Project>
+      <Name>NotificationHubFunctionLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -93,9 +106,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>50562</DevelopmentServerPort>
+          <DevelopmentServerPort>57484</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:50562/</IISUrl>
+          <IISUrl>http://localhost:57484/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
