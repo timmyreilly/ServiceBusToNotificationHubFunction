@@ -1,5 +1,7 @@
 Sample appsettings.json
+Goes next to `ServiceBusTopicTriggerCSharp` directory
 
+```json
 {
   "IsEncrypted": false,
   "Values": {
@@ -9,3 +11,4 @@ Sample appsettings.json
     "hubName": "TTNHub"
   }
 }
+```
